@@ -3,16 +3,16 @@ import React, { Component } from 'react';
 export default class Cell extends Component {
   
   constructor(props) {
-    super()
+    super(props)
     this.state = {
-      color: props.color
+      color: this.props.color
     }
   }
 
   handleClick = () => {
-    this.setState = {
+    this.setState({
       color: this.props.selectedColor
-    }
+    })
   }
   
   render() {
